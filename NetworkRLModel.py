@@ -182,8 +182,8 @@ class Participant():
 
 class ExpData():
     def __init__(self, RatID=11):
-        #data_path = "/Users/haoyufan/Sunny/SingleContextSequence/Result"
-        data_path = "/media/zhemengwu/Gigantic Data/SingleContextSequence/Result/"
+        #data_path = "/Users/haoyufan/Sunny/SingleContextSequence/Data"
+        data_path = "/media/zhemengwu/Gigantic Data/SingleContextSequence/Data/"
         data_file = os.path.join(data_path, "SingleContext_Rat{n}.csv".format(n=RatID))
         self.df = pd.read_csv(data_file)
         self.dates = self.df["Date"].unique()
